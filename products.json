@@ -1,0 +1,260 @@
+{
+  "items": [
+    {
+      "sys": {
+        "id": "1"
+      },
+      "fields": {
+        "title": "Torta Oreo",
+        "price": 10.99,
+        "image": {
+          "fields": {
+            "file": {
+              "url": "img/producto1.jpg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "id": "2"
+      },
+      "fields": {
+        "title": "Torta Brownie",
+        "price": 12.99,
+        "image": {
+          "fields": {
+            "file": {
+              "url": "img/producto2.jpg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "id": "3"
+      },
+      "fields": {
+        "title": "Torta Red Velvet",
+        "price": 12.99,
+        "image": {
+          "fields": {
+            "file": {
+              "url": "img/producto3.jpg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "id": "4"
+      },
+      "fields": {
+        "title": "torta fontanta",
+        "price": 22.99,
+        "image": {
+          "fields": {
+            "file": {
+              "url": "img/producto4.jpg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "id": "5"
+      },
+      "fields": {
+        "title": "carrot cake",
+        "price": 88.99,
+        "image": {
+          "fields": {
+            "file": {
+              "url": "img/producto5.jpg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "id": "6"
+      },
+      "fields": {
+        "title": "cheesecake de frutos rojos",
+        "price": 32.99,
+        "image": {
+          "fields": {
+            "file": {
+              "url": "img/producto6.jpg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "id": "7"
+      },
+      "fields": {
+        "title": "cheesecake de dulce de leche",
+        "price": 45.99,
+        "image": {
+          "fields": {
+            "file": {
+              "url": "img/producto7.jpg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "id": "8"
+      },
+      "fields": {
+        "title": "chocotorta",
+        "price": 33.99,
+        "image": {
+          "fields": {
+            "file": {
+              "url": "img/producto8.jpg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "id": "9"
+      },
+      "fields": {
+        "title": "chocotorta oreo",
+        "price": 10.99,
+        "image": {
+          "fields": {
+            "file": {
+              "url": "img/producto9.jpg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "id": "10"
+      },
+      "fields": {
+        "title": "budin de naranja y arándanos",
+        "price": 12.99,
+        "image": {
+          "fields": {
+            "file": {
+              "url": "img/producto10.jpg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "id": "11"
+      },
+      "fields": {
+        "title": "budin de banana",
+        "price": 12.99,
+        "image": {
+          "fields": {
+            "file": {
+              "url": "img/producto11.jpg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "id": "12"
+      },
+      "fields": {
+        "title": "budin de limón",
+        "price": 22.99,
+        "image": {
+          "fields": {
+            "file": {
+              "url": "img/producto12.jpg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "id": "13"
+      },
+      "fields": {
+        "title": "crumble de manzana",
+        "price": 88.99,
+        "image": {
+          "fields": {
+            "file": {
+              "url": "img/producto13.jpg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "id": "14"
+      },
+      "fields": {
+        "title": "brownies con nueces",
+        "price": 32.99,
+        "image": {
+          "fields": {
+            "file": {
+              "url": "img/producto14.jpg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "id": "15"
+      },
+      "fields": {
+        "title": "brownies de oreo",
+        "price": 45.99,
+        "image": {
+          "fields": {
+            "file": {
+              "url": "img/producto15.jpg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "id": "16"
+      },
+      "fields": {
+        "title": "cookies",
+        "price": 33.99,
+        "image": {
+          "fields": {
+            "file": {
+              "url": "img/producto16.jpg"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

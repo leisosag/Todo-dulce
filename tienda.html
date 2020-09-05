@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_tienda.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/675e0bba25.js" crossorigin="anonymous"></script>
+    <title>Tienda | Todo Dulce</title>
+    <link rel="icon" href="img/logo.ico" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-light navbar-expand-md justify-content-between fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse dual-nav w-50 order-1 order-md-0 link-color">
+                <ul class="navbar-nav ml-5">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#header">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Reservar</a>
+                    </li>
+                </ul>
+            </div>
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.svg" width="30" height="30" class="d-inline-block align-top ml-5" alt="logo"
+                    loading="lazy">
+                Todo dulce
+            </a>
+            <div class="navbar-collapse collapse dual-nav w-50 order-2 mr-5">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="login.html"><i class="fa fa-user mr-3"></i></a></li>
+
+                    <div class="cart-btn nav-item">
+                        <span class="nav-link"><i class="fas fa-shopping-cart"></i></span>
+                        <div class="cart-items">0</div>
+                    </div>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- GRILLA -->
+    <section class="productos" id="header">
+        <div class="tituloProductos">
+            <h2>Productos</h2>
+        </div>
+        <div class="grillaProductos">
+
+            <!-- 
+            <article class="producto">
+                <div class="imagenContenedor">
+                    <img src="img/producto1.jpg" alt="budin" class="imagenProducto">
+                    <buttton class="bag-btn" data-id="1"><i class="fas fa-shopping-cart"></i>Agregar
+                    </buttton>
+                </div>
+                <h3>Budin de arándanos</h3>
+                <h4>$000</h4>
+            </article>
+            -->
+
+        </div>
+    </section>
+
+    <!-- CART -->
+    <div class="cart-overlay">
+        <div class="cart">
+            <span class="close-cart">
+                <i class="fas fa-window-close"></i>
+            </span>
+            <h2>Tu pedido</h2>
+            <div class="cart-content">
+                <!-- cart item -->
+                <div class="cart-item">
+                    <img src="img/producto1.jpg" alt="product">
+                    <div>
+                        <h4>Budin</h4>
+                        <h6>$000</h6>
+                        <span class="remove-item">Eliminar</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-chevron-up"></i>
+                        <p class="item-amount">1</p>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="cart-footer">
+                <h3>TOTAL: $<span class="cart-total">0</span></h3>
+                <button class="clear-cart banner-btn btn-rosa btn-block">Vaciar carrito</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

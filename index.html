@@ -1,153 +1,211 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/675e0bba25.js" crossorigin="anonymous"></script>
-    <title>Todo dulce</title>
+    <title>Todo Dulce</title>
+    <link rel="icon" href="img/logo.ico" />
 </head>
+
 <body>
-    <!-- PORTADA -->
-    <header>
-        <nav class="navbar">
-            <div class="hamburguesa">
-                <div id="menu">
-                    <ul class="menuLinks">
-                        <li>Productos</a></li>
-                        <li><a href="productos/tortas.html">Tortas</a></li>
-                        <li><a href="productos/brownies.html">Brownies</a></li>
-                        <li><a href="productos/donuts.html">Donuts</a></li>
-                        <li><a href="productos/cookies.html">Cookies</a></li>
-                        <li><a href="productos/desayunos.html">Desayunos</a></li>
-                        <br>
-                        <li><a href="login.html">Ingresar</a></li>
-                         <li><a href="contacto.html">Contacto</a></li>
-                        <li><a href="ubicacion.html">Visitanos</a></li>
-                        <li><a href="about.html">Sobre nosotros</a></li>
-                    </ul>
-                </div>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-light navbar-expand-md justify-content-between fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse dual-nav w-50 order-1 order-md-0 link-color">
+                <ul class="navbar-nav ml-5">
+                    <li class="nav-item">
+                        <a class="nav-link" href="tienda.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Reservar</a>
+                    </li>
+                </ul>
             </div>
-            <i id="menuBtn" class="fas fa-bars"></i>
-            <div class="logo">
-                <a href="#portada"><img src="img/logotexto.png" alt=""></a>
+            <a class="navbar-brand" href="#header">
+                <img src="img/logo.svg" width="30" height="30" class="d-inline-block align-top ml-5" alt="logo"
+                    loading="lazy">
+                Todo dulce
+            </a>
+            <div class="navbar-collapse collapse dual-nav w-50 order-2 mr-5">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="login.html"><i class="fa fa-user mr-3"></i></a></li>
+                    <div class="cart-btn nav-item">
+                        <span class="nav-link"><i class="fas fa-shopping-cart"></i></span>
+                        <div class="cart-items">0</div>
+                    </div>
+                </ul>
             </div>
-            <div class="tiendaLinks">
-                <div class="box">
-                    <input type="text" class="search-texto" placeholder="Qué estás buscando?">
-                    <a href="#" class="search-btn">
-                        <i class="fas fa-search"></i>
-                    </a>
-                </div>
-                <a href="#"><i class="far fa-user"></i></a>
-                <a href="#"><i class="fas fa-cookie-bite"></i></a>
-            </div>
-        </nav>
-        <div class="banner" id="portada">
-            <h1>Tortas y algo más...</h1>
-            <p>algo de texto random. bla bla bla bla</p>
-            <p>algo de texto random. bla bla bla bla</p>
-            <button class="btnSolido">TIENDA ONLINE</button>
         </div>
-    </header>
-    <!-- PRODUCTOS -->
-    <section class="contenedor productos">
-        <h1>Conoce nuestros productos</h1>
-        <div class="grid">
-            <div class="productos-ind">
-                <a href="productos/tortas.html">
-                    <img src="img/producto1.jpg" alt="">
-                <div class="producto-hover">
-                    <p>Tortas</p>
-                </div>
-                </a>
-            </div>
-            <div class="productos-ind">
-                <a href="productos/brownies.html">
-                    <img src="img/producto2.jpg" alt="">
-                <div class="producto-hover">
-                    <p>Brownies</p>
-                </div>
-                </a>
-            </div>
-            <div class="productos-ind">
-                <a href="productos/donuts.html">
-                    <img src="img/producto3.jpg" alt="">
-                <div class="producto-hover">
-                    <p>Donuts</p>
-                </div>
-                </a>
-            </div>
-            <div class="productos-ind">
-                <a href="productos/cookies.html">
-                    <img src="img/producto4.jpg" alt="">
-                <div class="producto-hover">
-                    <p>Cookies</p>
-                </div>
-                </a>
-            </div>
-            <div class="productos-ind">
-                <a href="productos/desayunos.html">
-                    <img src="img/producto5.jpg" alt="">
-                <div class="producto-hover">
-                    <p>Desayunos</p>
-                </div>
-                </a>
+    </nav>
+    <!-- HEADER -->
+    <section class="header" id="header">
+        <div class="header-photo">
+            <picture>
+                <source media="(min-width:401px)" srcset="img/background-big.jpg" />
+                <source media="(max-width:400px)" srcset="img/background-tall.jpg" />
+                <img src="img/background-small.jpg" />
+            </picture>
+            <div class="header-texto">
+                <h1 class="">Tortas y algo más...</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto voluptatem sequi alias consequatur
+                    dolor.</p>
+                <a href="tienda.html"><button class="btn btn-rosa mr-3">TIENDA</button></a>
+                <a href="contacto.html"><button class="btn btn-borde-rosa">RESERVAR</button></a>
             </div>
         </div>
     </section>
-    <!-- CALIDAD -->
-    <section class="calidad">
-        <div class="banner bannerTexto">
-            <h1>Como hecho en casa</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci veritatis quis blanditiis odit sunt voluptatibus at deleniti molestias recusandae ratione dolor quaerat eos quasi temporibus vero.</p>
-            <br>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci veritatis quis blanditiis odit sunt voluptatibus at deleniti molestias recusandae ratione dolor quaerat eos quasi temporibus vero impedit aliquam, assumenda dolore. Sit amet consectetur, adipisicing elit. Adipisci veritatis quis. </p>
+    <!-- PRODUCTOS 3 -->
+    <section class="container-fluid pt-5 pb-5" id="productos">
+        <div class="row justify-content-between pt-5 pb-3">
+            <div class="col-md-12 col-xl-8 p-5 contenedorImagenes">
+                <div class="row justify-content-between">
+                    <div class="col-xs-12 col-sm-4 col-xl-4 p-0 contenedorImagen">
+                        <a href="tienda.html"><img src="img/producto1.jpg" alt="tortas"></a>
+                        <div class="overlay">
+                            <div class="titulo">Tortas</div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-xl-4 p-0 contenedorImagen">
+                        <a href="tienda.html"><img src="img/producto10.jpg" alt="budines"></a>
+                        <div class="overlay">
+                            <div class="titulo">Budines</div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-xl-4 p-0 contenedorImagen">
+                        <a href="tienda.html"><img src="img/producto13.jpg" alt="crumble"></a>
+                        <div class="overlay">
+                            <div class="titulo">Y más!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-xl-3 justify-content-center text-center d-flex flex-column mr-5">
+                <h2 class="mr-5">NUESTROS PRODUCTOS</h2>
+                <p class="mr-5 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, non</p>
+                <a href="tienda.html"><button class="btn btn-rosa mr-5">VER TODOS</button></a>
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT -->
+    <section class="container-fluid align-center pt-5 pb-5" id="about">
+        <div class="row">
+            <div class="col-xs-12 col-lg-5 mr-5 justify-content-center text-center d-flex flex-column">
+                <!-- descripcion -->
+                <h2>HECHO COMO EN CASA</h2>
+                <p class="ml-5 mr-5 mt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus minima
+                    accusantium a cumque iusto,
+                    consequatur adipisci assumenda voluptatum excepturi quam quibusdam atque dolor corporis tempora
+                    commodi. Labore voluptatum quae ipsum.</p>
+            </div>
+            <div class="col-xs-12 col-lg-6">
+                <img src="img/manos.jpg" alt="cocinar" loading="lazy">
+            </div>
         </div>
     </section>
     <!-- INSTAGRAM -->
-    <section class="contenedor instagram">
-        <h1>@dulcetododulce</h1>
-        <div class="grid instagram-grid">
-            <button class="btn-flecha"><i class="fas fa-chevron-right fa-flip-horizontal"></i></button>
-            <div class="instagram-ind">
-                <img src="img/instagram1.jpg" alt="">
+    <section class="container pt-5 pb-5" id="instagram">
+        <div class="row justify-content-center">
+            <div class="col-xs-12 pt-5 pb-5 text-center">
+                <h2>ENCONTRANOS EN INSTAGRAM</h2>
+                <a href="tienda.html"><button class="btn btn-amarillo mt-3 mr-3">@dulcetododulce</button></a>
             </div>
-            <div class="instagram-ind">
-                <img src="img/instagram2.jpg" alt="">
+            <div class="carousel container ml-2 mr-2">
+                <div class="contenedorImagenes">
+                    <button aria-label="Anterior" class="carouselAnterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="contenedorImagenesLista">
+                        <div class="contenedorImagen ml-1 mr-1">
+                            <img src="img/1.jpg" alt="imagen instagram">
+                            <div class="overlay blur">
+                                <a href="https://www.instagram.com/p/CAqFYanlEeM/" target="_blank" class="titulo">Ver
+                                    más</a>
+                            </div>
+                        </div>
+                        <div class="contenedorImagen ml-1 mr-1">
+                            <img src="img/2.jpg" alt="imagen instagram">
+                            <div class="overlay blur">
+                                <a href="https://www.instagram.com/p/CApzDvmlCbm/" target="_blank" class="titulo">Ver
+                                    más</a>
+                            </div>
+                        </div>
+                        <div class="contenedorImagen ml-1 mr-1">
+                            <img src="img/3.jpg" alt="imagen instagram">
+                            <div class="overlay blur">
+                                <a href="https://www.instagram.com/p/CApyloql-hg/" target="_blank" class="titulo">Ver
+                                    más</a>
+                            </div>
+                        </div>
+                        <div class="contenedorImagen ml-1 mr-1">
+                            <img src="img/4.jpg" alt="imagen instagram">
+                            <div class="overlay blur">
+                                <a href="https://www.instagram.com/p/BzTbq0DF-KU/" target="_blank" class="titulo">Ver
+                                    más</a>
+                            </div>
+                        </div>
+                        <div class="contenedorImagen ml-1 mr-1">
+                            <img src="img/5.jpg" alt="imagen instagram">
+                            <div class="overlay blur">
+                                <a href="https://www.instagram.com/p/BxVyvxFB-fJ/" target="_blank" class="titulo">Ver
+                                    más</a>
+                            </div>
+                        </div>
+                        <div class="contenedorImagen ml-1 mr-1">
+                            <img src="img/6.jpg" alt="imagen instagram">
+                            <div class="overlay blur">
+                                <a href="https://www.instagram.com/p/BxDPEzHl3DM/" target="_blank" class="titulo">Ver
+                                    más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button aria-label="Siguiente" class="carouselSiguiente">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div role="tablist" class="carouselIndicadores"></div>
             </div>
-            <div class="instagram-ind">
-                <img src="img/instagram3.jpg" alt="">
-            </div>
-            <button class="btn-flecha"><i class="fas fa-chevron-right"></i></button>
         </div>
     </section>
-    <!-- FOOTER -->
-    <footer>
-        <div class="banner banner-footer">
-            <div class="footer-ind">
-                <h2>Todo dulce</h2>
-                <a href="#">Sobre nosotros</a>
-                <a href="#">FAQs</a>
-                <a href="#">Delivery</a>
-            </div>
-            <div class="footer-ind">
-                <h2>Seguinos</h2>
-                <div class="footer-social">
-                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://twitter.com/home" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/?app=desktop" target="_blank"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-            <div class="footer-ind">
-                <h2>Contacto</h2>
-                <a href="mailto:hola@tododulce.com">hola@tododulce.com</a>
-                <a href="https://api.whatsapp.com/send?phone=541111111111">11 2233 4455</a>
-                <a href="#">Calle falsa 123</a>
+    <!-- FOOTER
+    <footer class="container-fluid p-5">
+        <div class="row justify-content-center">
+            <div class="col-xs-12 text-center pt-2">
+                <a href="mailto:hola@tododulce.com"><i class="far fa-envelope ml-2 iconos-footer"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=0123456789" target="_blank"><i
+                        class="fab fa-whatsapp ml-2 iconos-footer"></i></a>
+                <a href="https://www.instagram.com/dulcetododulce/?hl=es-la" target="_blank"><i
+                        class="fab fa-instagram ml-2 iconos-footer"></i></a>
             </div>
         </div>
-    </footer>
+        <div class="row m-5 justify-content-center">
+            <a class="navbar-brand" href="#header">
+                <img src="img/logo.svg" width="30" height="30" class="d-inline-block align-top ml-5" alt="logo"
+                    loading="lazy">
+            </a>
+        </div>
+    </footer>  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
-<script src="app.js"></script>
+
 </html>
