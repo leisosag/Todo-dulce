@@ -20,8 +20,12 @@ h1, h3, h4, h5, h6 {
     font-weight: 400;
     color: var(--negro);
 }
-h2 {
+#productos h2, #about h2, #instagram h2, .tituloProductos h1 {
     font-size: 3rem;
+    font-weight: 600;
+}
+.tituloProductos h2 {
+    font-size: 2rem;
     font-weight: 600;
 }
 p {
@@ -84,7 +88,7 @@ nav {
 /* el texto del logo */
 .navbar-light .navbar-brand, footer .navbar-brand {
     color: var(--rosa);
-    font-size: 1.5rem;
+    /*font-size: 1.5rem;*/
 }
 .navbar-light .navbar-brand:hover {
     color: var(--rosa);
@@ -137,7 +141,7 @@ nav {
     font-weight: 400;
     max-width: 50vw;
 }
-#productos h2 {
+#productos h2, .tituloProductos h1 {
     color: var(--rosa);
 }
 /***** ABOUT *****/

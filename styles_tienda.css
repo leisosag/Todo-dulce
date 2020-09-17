@@ -6,12 +6,17 @@ p {
 }
 .productos {
     padding: 4rem 0;
-}
+}/*
 .tituloProductos h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 5rem;
     text-transform: capitalize;
+}*/
+#header-tienda {
+    background-image: url(img/fondo\ sprinkles.jpg);
+    min-height: 40vh;
+    width: 100%;
 }
 .grillaProductos {
     width: 90vw;

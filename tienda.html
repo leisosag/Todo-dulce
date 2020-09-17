@@ -10,57 +10,64 @@
     <link rel="stylesheet" href="styles_tienda.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/675e0bba25.js" crossorigin="anonymous"></script>
-    <title>Tienda | Todo Dulce</title>
+    <title>Tienda | Compartir Pastelería</title>
     <link rel="icon" href="img/logo.ico" />
 </head>
 
 <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-light navbar-expand-md justify-content-between fixed-top">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-nav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse dual-nav w-50 order-1 order-md-0 link-color">
-                <ul class="navbar-nav ml-5">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#header">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Reservar</a>
-                    </li>
-                </ul>
-            </div>
-            <a class="navbar-brand" href="index.html">
-                <img src="img/logo.svg" width="30" height="30" class="d-inline-block align-top ml-5" alt="logo"
-                    loading="lazy">
-                Todo dulce
-            </a>
-            <div class="navbar-collapse collapse dual-nav w-50 order-2 mr-5">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="login.html"><i class="fa fa-user mr-3"></i></a></li>
-
-                    <div class="cart-btn nav-item">
-                        <span class="nav-link"><i class="fas fa-shopping-cart"></i></span>
-                        <div class="cart-items">0</div>
-                    </div>
-
-                </ul>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logo.svg" width="30" height="30" class="d-inline-block align-top ml-5" alt="logo"
+                loading="lazy">
+            Todo dulce
+        </a>
+        <button class="navbar-toggler mr-5" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link" href="#header">Productos</a>
+                <a class="nav-link" href="contacto.html">Contacto</a>
             </div>
         </div>
     </nav>
 
-    <!-- GRILLA -->
-    <section class="productos" id="header">
-        <div class="tituloProductos">
-            <h2>Productos</h2>
+    <!-- 
+    <nav class="navbar navbar-light navbar-expand-lg bg-dark fixed-top">
+        <a class="navbar-brand text-white" href="#header">
+            <img src="img/engranaje-blanco.png" width="30" height="30" class="d-inline-block align-top ml-5" alt="logo"
+                loading="lazy">
+            Sinergia
+        </a>
+        <button class="navbar-toggler mr-5" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link text-white" href="about.html">Qué es Sinergia?</a>
+                <a class="nav-link text-white" href="membresias.html">Membresías</a>
+                <a class="nav-link text-white" href="salas.html">Salas</a>
+                <a class="nav-link text-white" href="cursos.html">Cursos</a>
+                <a class="nav-link text-white mr-5" href="contacto.html">Contacto</a>
+            </div>
         </div>
-        <div class="grillaProductos">
+    </nav> -->
 
+    <!-- GRILLA -->
+    <section class="productos container-fluid">
+        <div class="tituloProductos d-flex flex-column justify-content-center" id="header-tienda">
+            <h1 class="text-center text-uppercase">Productos</h1>
+            <h2 class="text-center">Todos los pedidos son con 48 hs de antelación</h2>
+        </div>
+        <div class="grillaProductos container">
 
+            <!-- tortas -->
             <article class="producto">
                 <div class="imagenContenedor">
-                    <img src="img/producto1.jpg" alt="budin" class="imagenProducto">
+                    <img src="img/productos/bizcochuelo coco.jpg" alt="budin" class="imagenProducto">
                     <buttton class="bag-btn" data-id="1">
                         <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
                             data-preference-id="190291776-712d21e2-45c1-4fd1-a04a-fef9743806e7"
@@ -68,13 +75,13 @@
                             </script>
                     </buttton>
                 </div>
-                <h3>Budin de arándanos</h3>
+                <h3>bizcochuelo de coco</h3>
                 <h4>$000</h4>
             </article>
 
             <article class="producto">
                 <div class="imagenContenedor">
-                    <img src="img/producto1.jpg" alt="budin" class="imagenProducto">
+                    <img src="img/productos/torta fontana.jpg" alt="budin" class="imagenProducto">
                     <buttton class="bag-btn" data-id="1">
                         <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
                             data-preference-id="190291776-712d21e2-45c1-4fd1-a04a-fef9743806e7"
@@ -82,13 +89,13 @@
                             </script>
                     </buttton>
                 </div>
-                <h3>Budin de arándanos</h3>
+                <h3>torta fontana</h3>
                 <h4>$000</h4>
             </article>
 
             <article class="producto">
                 <div class="imagenContenedor">
-                    <img src="img/producto1.jpg" alt="budin" class="imagenProducto">
+                    <img src="img/productos/crumble.jpg" alt="budin" class="imagenProducto">
                     <buttton class="bag-btn" data-id="1">
                         <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
                             data-preference-id="190291776-712d21e2-45c1-4fd1-a04a-fef9743806e7"
@@ -96,13 +103,13 @@
                             </script>
                     </buttton>
                 </div>
-                <h3>Budin de arándanos</h3>
+                <h3>crumble de manzana</h3>
                 <h4>$000</h4>
             </article>
 
             <article class="producto">
                 <div class="imagenContenedor">
-                    <img src="img/producto1.jpg" alt="budin" class="imagenProducto">
+                    <img src="img/productos/crumble ind.jpg" alt="budin" class="imagenProducto">
                     <buttton class="bag-btn" data-id="1">
                         <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
                             data-preference-id="190291776-712d21e2-45c1-4fd1-a04a-fef9743806e7"
@@ -110,7 +117,178 @@
                             </script>
                     </buttton>
                 </div>
-                <h3>Budin de arándanos</h3>
+                <h3>mini crumble</h3>
+                <h4>$000</h4>
+            </article>
+
+            <!-- cheesecake -->
+            <article class="producto">
+                <div class="imagenContenedor">
+                    <img src="img/productos/cheese frutos rojos.jpg" alt="budin" class="imagenProducto">
+                    <buttton class="bag-btn" data-id="1">
+                        <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+                            data-preference-id="190291776-712d21e2-45c1-4fd1-a04a-fef9743806e7"
+                            data-button-label="Comprar">
+                            </script>
+                    </buttton>
+                </div>
+                <h3>cheesecake de frutos rojos</h3>
+                <h4>$000</h4>
+            </article>
+
+            <article class="producto">
+                <div class="imagenContenedor">
+                    <img src="img/productos/cheese dulce de leche.jpg" alt="budin" class="imagenProducto">
+                    <buttton class="bag-btn" data-id="1">
+                        <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+                            data-preference-id="190291776-712d21e2-45c1-4fd1-a04a-fef9743806e7"
+                            data-button-label="Comprar">
+                            </script>
+                    </buttton>
+                </div>
+                <h3>cheesecake de dulce de leche</h3>
+                <h4>$000</h4>
+            </article>
+
+            <article class="producto">
+                <div class="imagenContenedor">
+                    <img src="img/productos/cheesecake bomba.jpg" alt="budin" class="imagenProducto">
+                    <buttton class="bag-btn" data-id="1">
+                        <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+                            data-preference-id="190291776-712d21e2-45c1-4fd1-a04a-fef9743806e7"
+                            data-button-label="Comprar">
+                            </script>
+                    </buttton>
+                </div>
+                <h3>cheesecake bomba</h3>
+                <h4>$000</h4>
+            </article>
+
+            <article class="producto">
+                <div class="imagenContenedor">
+                    <img src="img/productos/cheesecake ind.jpg" alt="budin" class="imagenProducto">
+                    <buttton class="bag-btn" data-id="1">
+                        <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+                            data-preference-id="190291776-712d21e2-45c1-4fd1-a04a-fef9743806e7"
+                            data-button-label="Comprar">
+                            </script>
+                    </buttton>
+                </div>
+                <h3>mini cheesecake</h3>
+                <h4>$000</h4>
+            </article>
+
+            <!-- otras tortas -->
+            <article class="producto">
+                <div class="imagenContenedor">
+                    <img src="img/productos/chocotorta.jpg" alt="budin" class="imagenProducto">
+                    <buttton class="bag-btn" data-id="1">
+                        <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+                            data-preference-id="190291776-712d21e2-45c1-4fd1-a04a-fef9743806e7"
+                            data-button-label="Comprar">
+                            </script>
+                    </buttton>
+                </div>
+                <h3>chocotorta</h3>
+                <h4>$000</h4>
+            </article>
+
+            <article class="producto">
+                <div class="imagenContenedor">
+                    <img src="img/productos/torta brownie.jpg" alt="budin" class="imagenProducto">
+                    <buttton class="bag-btn" data-id="1">
+                        <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+                            data-preference-id="190291776-712d21e2-45c1-4fd1-a04a-fef9743806e7"
+                            data-button-label="Comprar">
+                            </script>
+                    </buttton>
+                </div>
+                <h3>torta brownie</h3>
+                <h4>$000</h4>
+            </article>
+
+            <article class="producto">
+                <div class="imagenContenedor">
+                    <img src="img/productos/leicaj de miel.jpg" alt="budin" class="imagenProducto">
+                    <buttton class="bag-btn" data-id="1">
+                        <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+                            data-preference-id="190291776-712d21e2-45c1-4fd1-a04a-fef9743806e7"
+                            data-button-label="Comprar">
+                            </script>
+                    </buttton>
+                </div>
+                <h3>leicaj de miel</h3>
+                <h4>$000</h4>
+            </article>
+
+            <article class="producto">
+                <div class="imagenContenedor">
+                    <img src="img/productos/galletitas mani.jpg" alt="budin" class="imagenProducto">
+                    <buttton class="bag-btn" data-id="1">
+                        <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+                            data-preference-id="190291776-712d21e2-45c1-4fd1-a04a-fef9743806e7"
+                            data-button-label="Comprar">
+                            </script>
+                    </buttton>
+                </div>
+                <h3>galletitas de mantequilla de mani con chips</h3>
+                <h4>$000</h4>
+            </article>
+
+            <!-- budines -->
+            <article class="producto">
+                <div class="imagenContenedor">
+                    <img src="img/productos/budin banana.jpg" alt="budin" class="imagenProducto">
+                    <buttton class="bag-btn" data-id="1">
+                        <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+                            data-preference-id="190291776-712d21e2-45c1-4fd1-a04a-fef9743806e7"
+                            data-button-label="Comprar">
+                            </script>
+                    </buttton>
+                </div>
+                <h3>budin de banana con chips</h3>
+                <h4>$000</h4>
+            </article>
+
+            <article class="producto">
+                <div class="imagenContenedor">
+                    <img src="img/productos/budin naranja.jpg" alt="budin" class="imagenProducto">
+                    <buttton class="bag-btn" data-id="1">
+                        <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+                            data-preference-id="190291776-712d21e2-45c1-4fd1-a04a-fef9743806e7"
+                            data-button-label="Comprar">
+                            </script>
+                    </buttton>
+                </div>
+                <h3>budin de naranja y arandanos</h3>
+                <h4>$000</h4>
+            </article>
+
+            <article class="producto">
+                <div class="imagenContenedor">
+                    <img src="img/productos/budin mandarina.jpg" alt="budin" class="imagenProducto">
+                    <buttton class="bag-btn" data-id="1">
+                        <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+                            data-preference-id="190291776-712d21e2-45c1-4fd1-a04a-fef9743806e7"
+                            data-button-label="Comprar">
+                            </script>
+                    </buttton>
+                </div>
+                <h3>budin de mandarina con chips</h3>
+                <h4>$000</h4>
+            </article>
+
+            <article class="producto">
+                <div class="imagenContenedor">
+                    <img src="img/productos/budin vainilla.jpg" alt="budin" class="imagenProducto">
+                    <buttton class="bag-btn" data-id="1">
+                        <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+                            data-preference-id="190291776-712d21e2-45c1-4fd1-a04a-fef9743806e7"
+                            data-button-label="Comprar">
+                            </script>
+                    </buttton>
+                </div>
+                <h3>budin de vainilla con chips</h3>
                 <h4>$000</h4>
             </article>
 
