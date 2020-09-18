@@ -4,12 +4,8 @@
     box-sizing: border-box;
 }
 :root {
-    /*--rosa: #f6416c;*/
-    --rosa: #AF86BC;
-    --verde: #00b8a9;
-    /*--amarillo: #ffde7d;*/
+    --lila: #AF86BC;
     --amarillo: #FFE785;
-    --violeta: #C7CEEA;
     --negro: #323232;
     --gris: #878787;
     --blanco: #f0f0f0;
@@ -34,12 +30,12 @@ p {
     color: var(--gris);
 }
 /***** BOTONES *****/
-.btn-rosa {
-    background-color: var(--rosa);
+.btn-color {
+    background-color: var(--lila);
     color: var(--blanco);
     border: none;
 }
-.btn-rosa:hover {
+.btn-color:hover {
     background-color: var(--amarillo);
     animation-name: salto;
     animation-duration: 0.4s;
@@ -49,7 +45,7 @@ p {
     color: var(--blanco);
 }
 .btn-verde:hover {
-    background-color: var(--rosa);
+    background-color: var(--lila);
     animation-name: salto;
     animation-duration: 0.4s;
 }
@@ -62,12 +58,12 @@ p {
     background-color: var(--verde);
     color: var(--blanco);
 }
-.btn-borde-rosa {
+.btn-borde-color {
     background-color: transparent;
-    border: 1px solid var(--rosa);
+    border: 1px solid var(--lila);
     color: var(--blanco);
 }
-.btn-borde-rosa:hover {
+.btn-borde-color:hover {
     color: var(--amarillo);
     border: 1px solid var(--amarillo);
     animation-name: salto;
@@ -82,23 +78,27 @@ nav {
 /* los li */
 .navbar-light .navbar-nav .nav-link {
     font-size: 1.2rem;
+    color: var(--lila);
 }
 .navbar-light .navbar-nav .nav-link:hover {
     animation-name: salto;
     animation-duration: 0.4s;
-    color: var(--verde);
+    color: var(--lila);
+    border: 1px solid var(--lila);
+    border-radius: 0.25rem;
 }
 /* el texto del logo */
 .navbar-light .navbar-brand, footer .navbar-brand {
-    color: var(--rosa);
+    color: var(--lila);
     /*font-size: 1.5rem;*/
 }
 .navbar-light .navbar-brand:hover {
-    color: var(--rosa);
+    color: var(--lila);
 }
 .nav-icon {
     font-size: 1.5rem;
 }
+/*
 .cart-btn {
     position: relative;
     cursor: pointer;
@@ -112,6 +112,7 @@ nav {
     border-radius: 30%;
     color: var(--blanco);
 }
+*/
 /***** HEADER *****/
 .header-photo img {
     width: 100%;
@@ -145,11 +146,11 @@ nav {
     max-width: 50vw;
 }
 #productos h2, .tituloProductos h1, .producto-detalle h2 {
-    color: var(--rosa);
+    color: var(--lila);
 }
 /***** ABOUT *****/
 #about h2 {
-    color: var(--verde);
+    color: var(--lila);
 }
 #about img {
     width: 100%;
@@ -222,6 +223,7 @@ nav {
 }
 .overlay:hover {
     opacity: 1;
+    cursor: pointer;
 }
 .overlay:hover > * {
     transform: translateY(0);
@@ -285,8 +287,8 @@ nav {
 /***** MOBILE *****/
 @media only screen and (max-width: 420px) {
   .header-texto {
-    bottom: 10vh;
-    left: 2vh;
+    bottom: 1vh;
+    left: 1vh;
   }
   .header-texto p {
     font-size: 15px;

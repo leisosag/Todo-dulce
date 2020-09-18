@@ -42,7 +42,7 @@ a, a:hover {
     position: absolute;
     top: 70%;
     right: 0;
-    background: var(--rosa);
+    background: var(--lila);
     color: var(--blanco);
     border: none;
     text-transform: uppercase;
@@ -53,7 +53,7 @@ a, a:hover {
     cursor: pointer;
 }
 .btn-comprar {
-    background: var(--rosa);
+    background: var(--lila);
     color: var(--blanco);
     border: none;
     text-transform: uppercase;
