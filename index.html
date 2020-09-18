@@ -16,34 +16,20 @@
 
 <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-light navbar-expand-md justify-content-between fixed-top">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-nav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse dual-nav w-50 order-1 order-md-0 link-color">
-                <ul class="navbar-nav ml-5">
-                    <li class="nav-item">
-                        <a class="nav-link" href="tienda.html">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Reservar</a>
-                    </li>
-                </ul>
-            </div>
-            <a class="navbar-brand" href="#header">
-                <img src="img/logo.svg" width="30" height="30" class="d-inline-block align-top ml-5" alt="logo"
-                    loading="lazy">
-                Todo dulce
-            </a>
-            <div class="navbar-collapse collapse dual-nav w-50 order-2 mr-5">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="login.html"><i class="fa fa-user mr-3"></i></a></li>
-                    <div class="cart-btn nav-item">
-                        <span class="nav-link"><i class="fas fa-shopping-cart"></i></span>
-                        <div class="cart-items">0</div>
-                    </div>
-                </ul>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logo.svg" width="30" height="30" class="d-inline-block align-top ml-5" alt="logo"
+                loading="lazy">
+            Compartir Pastelería
+        </a>
+        <button class="navbar-toggler mr-5" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link" href="#header">Productos</a>
+                <a class="nav-link" href="contacto.html">Contacto</a>
             </div>
         </div>
     </nav>
@@ -60,11 +46,11 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto voluptatem sequi alias consequatur
                     dolor.</p>
                 <a href="tienda.html"><button class="btn btn-rosa mr-3">TIENDA</button></a>
-                <a href="contacto.html"><button class="btn btn-borde-rosa">RESERVAR</button></a>
+                <a href="contacto.html"><button class="btn btn-borde-rosa">CONTACTO</button></a>
             </div>
         </div>
     </section>
-    <!-- PRODUCTOS 3 -->
+    <!-- PRODUCTOS -->
     <section class="container-fluid pt-5 pb-5" id="productos">
         <div class="row justify-content-between pt-5 pb-3">
             <div class="col-md-12 col-xl-8 p-5 contenedorImagenes">

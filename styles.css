@@ -4,9 +4,11 @@
     box-sizing: border-box;
 }
 :root {
-    --rosa: #f6416c;
+    /*--rosa: #f6416c;*/
+    --rosa: #AF86BC;
     --verde: #00b8a9;
-    --amarillo: #ffde7d;
+    /*--amarillo: #ffde7d;*/
+    --amarillo: #FFE785;
     --violeta: #C7CEEA;
     --negro: #323232;
     --gris: #878787;
@@ -20,7 +22,7 @@ h1, h3, h4, h5, h6 {
     font-weight: 400;
     color: var(--negro);
 }
-#productos h2, #about h2, #instagram h2, .tituloProductos h1 {
+#productos h2, #about h2, #instagram h2, .tituloProductos h1, .producto-detalle h2 {
     font-size: 3rem;
     font-weight: 600;
 }
@@ -75,6 +77,7 @@ p {
 nav {
     min-height: 10vh;
     background-color: #fff;
+    box-shadow: 0px 7px 30px 0px rgba(0, 0, 0, 0.2);
 }
 /* los li */
 .navbar-light .navbar-nav .nav-link {
@@ -141,7 +144,7 @@ nav {
     font-weight: 400;
     max-width: 50vw;
 }
-#productos h2, .tituloProductos h1 {
+#productos h2, .tituloProductos h1, .producto-detalle h2 {
     color: var(--rosa);
 }
 /***** ABOUT *****/

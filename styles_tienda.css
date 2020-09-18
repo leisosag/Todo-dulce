@@ -4,6 +4,13 @@
 p {
     margin-bottom: 0;
 }
+a, a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+.p-bold {
+    font-weight: 700;
+}
 .productos {
     padding: 4rem 0;
 }/*
@@ -14,7 +21,7 @@ p {
     text-transform: capitalize;
 }*/
 #header-tienda {
-    background-image: url(img/fondo\ sprinkles.jpg);
+    /*background-image: url(img/fondo\ sprinkles.jpg);*/
     min-height: 40vh;
     width: 100%;
 }
@@ -45,9 +52,21 @@ p {
     transform: translateX(101%);
     cursor: pointer;
 }
-.bag-btn:hover {
-    background: var(--verde);
+.btn-comprar {
+    background: var(--rosa);
     color: var(--blanco);
+    border: none;
+    text-transform: uppercase;
+    padding: 0.25rem 0.75rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.bag-btn:hover, .btn-comprar:hover {
+    background: var(--amarillo);
+    color: var(--gris);
+    animation-name: salto;
+    animation-duration: 0.4s;
 }
 .fa-shopping-cart {
     margin-right: 0.5rem;
@@ -60,6 +79,7 @@ p {
     width: 100%;
     min-height: 12rem;
     transition: var(--mainTransition);
+    cursor: pointer;
 }
 .producto h3 {
     text-transform: uppercase;
@@ -76,4 +96,16 @@ p {
 }
 button.mercadopago-button {
     background-color: transparent;
+}
+button.mercadopago-button:hover {
+    color: var(--gris);
+}
+.producto-detalle {
+    min-height: 90vh;
+}
+.img-descripcion {
+    width: 100%;
+}
+.box-detalles-compra {
+    background-color: lightgrey;
 }
