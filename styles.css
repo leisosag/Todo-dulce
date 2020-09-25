@@ -98,21 +98,6 @@ nav {
 .nav-icon {
     font-size: 1.5rem;
 }
-/*
-.cart-btn {
-    position: relative;
-    cursor: pointer;
-}
-.cart-items {
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    background: var(--rosa-oscuro);
-    padding: 0 5px;
-    border-radius: 30%;
-    color: var(--blanco);
-}
-*/
 /***** HEADER *****/
 .header-photo img {
     width: 100%;
@@ -257,21 +242,31 @@ nav {
 	opacity: 1;
 }
 /***** CONTACTO *****/
-/*footer {
-    background: url(img/confeti.png);
+footer {
+    background: url(img/sprinkles.jpg);
     background-size: cover;
     background-position: center;
-}*/
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .iconos-footer {
-    color: var(--rosa-oscuro);
-    font-size: 30px;
+    color: #fff;
+    font-size: 50px;
 }
 .iconos-footer:hover {
     animation-name: salto;
-    animation-duration: 0.4s;
+    animation-duration: 0.2s;
     color: var(--verde);
 }
-
+.fondo-footer {
+    padding: 3rem;
+    border-radius: 10px;
+    margin: 5vh;
+    background-color: rgba(255, 255, 255, 1);
+}
 /***** ANIMACIONES *****/
 @keyframes salto {
     0% {
