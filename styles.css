@@ -116,10 +116,13 @@ nav {
     bottom: 10vh;
     left: 10vh;
     z-index: 2;
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 10px;
-    margin: 0;
+    margin: 10%;
     background-color: rgba(0, 0, 0, 0.8);
+}
+.header-texto h1, .header-texto p, .header-texto h4, .header-texto h5 {
+    width: 80%;
 }
 .header-texto h1 { 
     font-weight: 700;
