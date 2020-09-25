@@ -118,7 +118,10 @@ nav {
     z-index: 2;
     padding: 1rem;
     border-radius: 10px;
-    margin: 10% 20% 10% 10%;
+    margin-right: 10vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 5vw;
     background-color: rgba(0, 0, 0, 0.8);
 }
 .header-texto h1, .header-texto p, .header-texto h4, .header-texto h5 {
