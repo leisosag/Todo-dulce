@@ -1,3 +1,7 @@
+a:hover {
+    text-decoration: none;
+    color: #fff;
+}
 #header-tienda {
     /*background-image: url(img/fondo\ sprinkles.jpg);*/
     min-height: 40vh;
@@ -5,6 +9,7 @@
 }
 .submenu {
     position: relative;
+    
 }
 .submenu #carrito{
     display: none;
@@ -19,6 +24,7 @@
     padding: 1.5rem;
     min-height: 30vh;
     min-width: 20vw;
+    border: 1px solid #666;
 }
 /* no se para que es esta clase */
 .vacio {
@@ -31,6 +37,7 @@
 table {
     border-collapse: collapse;
     border-spacing: 0;
+    border-color: grey;
 }
 th, td {
     padding: 1rem;
