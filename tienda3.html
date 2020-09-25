@@ -29,9 +29,29 @@
         </button>
         <div class="collapse navbar-collapse pr-5" id="navbarNavAltMarkup">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active"><a class="nav-link" href="#header">Productos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#header">Productos</a></li>
                 <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                <li class="nav-item submenu"><i class="fas fa-shopping-cart nav-link"></i></li>
+                <li class="nav-item submenu">
+                    <i class="fas fa-shopping-cart nav-link"></i>
+                    <div id="carrito">
+
+                        <table id="lista-carrito" class="u-full-width">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+
+                        <a href="#" id="comprar-carrito" class="btn btn-color btn-block">Comprar</a>
+                        <a href="#" id="vaciar-carrito" class="btn btn-borde-color btn-block">Vaciar Carrito</a>
+                    </div>
+                </li>
 
             </ul>
         </div>
@@ -54,50 +74,49 @@
         </div>
     </section>
     <!-- GRILLA -->
-    <section class="productos container-fluid">
+    <section id="lista-productos" class="container-fluid">
         <div class="tituloProductos d-flex flex-column justify-content-center" id="header-tienda">
             <h1 class="text-center text-uppercase">Productos</h1>
             <h2 class="text-center">Todos los pedidos son con 48hs de antelación</h2>
         </div>
-        <div class="row justify-content-center mb-3">
+        <div class="row justify-content-center mb-3 mt-3">
 
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+            <div class="card m-2" style="width: 18rem;">
+                <img src="img/productos/bizcochuelo coco.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h5 class="card-title">Bizcochuelo de Coco</h5>
+                    <p class="card-text">Bizcochuelo de coco humedecido en almibar, relleno con dulce de leche y
+                        trufas de coco.</p>
+                    <a href="#" class="btn btn-color input agregar-carrito" data-id="1">La quiero!</a>
                 </div>
             </div>
 
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+            <div class="card m-2" style="width: 18rem;">
+                <img src="img/productos/torta fontana.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h5 class="card-title">Torta Fontana</h5>
+                    <p class="card-text">Bizcochuelo de Vainilla humedecido en almíbar de frutillas, relleno de
+                        frutillas con crema.</p>
+                    <a href="#" class="btn btn-color input agregar-carrito" data-id="2">La quiero!</a>
                 </div>
             </div>
 
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+            <div class="card m-2" style="width: 18rem;">
+                <img src="img/productos/chocotorta.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h5 class="card-title">Chocotorta</h5>
+                    <p class="card-text">Chocotorta varios tamaños.</p>
+                    <a href="#" class="btn btn-color input agregar-carrito" data-id="3">La quiero!</a>
                 </div>
             </div>
 
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+            <div class="card m-2" style="width: 18rem;">
+                <img src="img/productos/torta brownie.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h5 class="card-title">Torta Brownie</h5>
+                    <p class="card-text">Clásico brownie (o no). Cubierto con una gran capa de dulce de
+                        leche y crema chantilly.</p>
+                    <a href="#" class="btn btn-color input agregar-carrito" data-id="4">La quiero!</a>
                 </div>
             </div>
 

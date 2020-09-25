@@ -84,8 +84,6 @@ nav {
     animation-name: salto;
     animation-duration: 0.4s;
     color: var(--lila);
-    border: 1px solid var(--lila);
-    border-radius: 0.25rem;
 }
 /* el texto del logo */
 .navbar-light .navbar-brand, footer .navbar-brand {
@@ -98,21 +96,6 @@ nav {
 .nav-icon {
     font-size: 1.5rem;
 }
-/*
-.cart-btn {
-    position: relative;
-    cursor: pointer;
-}
-.cart-items {
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    background: var(--rosa-oscuro);
-    padding: 0 5px;
-    border-radius: 30%;
-    color: var(--blanco);
-}
-*/
 /***** HEADER *****/
 .header-photo img {
     width: 100%;

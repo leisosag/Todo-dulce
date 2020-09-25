@@ -1,3 +1,48 @@
+#header-tienda {
+    /*background-image: url(img/fondo\ sprinkles.jpg);*/
+    min-height: 40vh;
+    width: 100%;
+}
 .submenu {
     position: relative;
+}
+.submenu #carrito{
+    display: none;
+}
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right:0;
+    top:100%;
+    z-index: 1;
+    background-color: #fff;
+    padding: 1.5rem;
+    min-height: 30vh;
+    min-width: 20vw;
+}
+/* no se para que es esta clase */
+.vacio {
+    padding: 10px;
+    background-color: crimson;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+th, td {
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+th:first-child, td:first-child {
+    padding-left: 0;
+}
+th:last-child, td:last-child {
+    padding-right: 0;
+}
+#vaciar-carrito {
+    color: var(--negro);
 }
