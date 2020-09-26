@@ -114,9 +114,7 @@ nav {
     width: 80vw;
     left: 50%;
     margin-left: -40vw;
-    height: 80vh;
-    top: 50%;
-    margin-top: -40vh;
+    height: auto;
     z-index: 2;
     padding: 1rem;
     border-radius: 10px;
