@@ -113,25 +113,13 @@ nav {
     position: absolute;
     width: auto;
     height: auto;
-    /*bottom: 50%;
-    left: 50%;*/
     z-index: 2;
     padding: 1rem;
     border-radius: 10px;
-    /*margin-right: 10vw;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    margin-left: 5vw;*/
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    
     background-color: rgba(0, 0, 0, 0.8);
 }
 .header-texto h1, .header-texto p, .header-texto h4, .header-texto h5 {
-    width: 80%;
+    width: 100%;
 }
 .header-texto h1 { 
     font-weight: 700;
@@ -162,34 +150,6 @@ nav {
 /***** CAROUSEL *****/
 .contenedorImagenes {
 	position: relative;
-}
-.carouselAnterior,
-.carouselSiguiente {
-	position: absolute;
-	display: block;
-	width: 30px;
-	height: 30px;
-	border: none;
-	top: calc(60% - 35px);
-	cursor: pointer;
-	line-height: 30px;
-	text-align: center;
-	background: none;
-	color: #666;
-}
-.carouselAnterior:hover,
-.carouselSiguiente:hover {
-	opacity: 100%;
-}
-.carouselAnterior {
-	left: -30px;
-}
-.carouselSiguiente {
-	right: -30px;
-}
-/* solo para el carousel */
-.contenedorImagenesLista {
-	overflow: hidden;
 }
 /* --- */
 .contenedorImagen {
@@ -243,18 +203,6 @@ nav {
 }
 .contenedorImagen:hover img {
     transform: scale(1.1);
-}
-.carouselIndicadores .glider-dot {
-    display: block;
-	background: #666;
-	opacity: .2;
-	border-radius: 50%;
-}
-.carouselIndicadores .glider-dot:hover {
-	opacity: .5;
-}
-.carouselIndicadores .glider-dot.active {
-	opacity: 1;
 }
 /***** CONTACTO *****/
 footer {
