@@ -1,5 +1,6 @@
 // CAROUSEL INSTAGRAM
-window.addEventListener('load', function () {
+/*window.addEventListener('load', function () {
+
     new Glider(document.querySelector('.contenedorImagenesLista'), {
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -29,3 +30,4 @@ window.addEventListener('load', function () {
         ]
     })
 });
+*/
