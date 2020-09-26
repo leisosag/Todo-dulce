@@ -111,8 +111,12 @@ nav {
 }
 .header-texto {
     position: absolute;
-    width: auto;
-    height: auto;
+    width: 80vw;
+    left: 50%;
+    margin-left: 10vw;
+    height: 80vh;
+    top: 50%;
+    margin-top: -40vh;
     z-index: 2;
     padding: 1rem;
     border-radius: 10px;
