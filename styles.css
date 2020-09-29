@@ -98,6 +98,20 @@ nav {
 .nav-icon {
     font-size: 1.5rem;
 }
+.navbar-toggler {
+    padding: 0.25rem;
+}
+.navbar-brand {
+    font-size: 1.2rem;
+    margin-right: 0;
+}
+.navbar-toggler-icon {
+    width: 1em;
+    height: 1em;
+}
+.navbar {
+    padding: 0;
+}
 /***** HEADER *****/
 .header-photo img {
     width: 100%;
